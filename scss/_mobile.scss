@@ -21,7 +21,7 @@
         .lg-heading {
             line-height: 1;
             margin-bottom: 1rem;
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
     }
 
@@ -72,7 +72,7 @@
 // Smartphones
 @include mediaSm {
     main {
-        padding: 2rem;
+        padding: 1rem;
 
         #home h1 {
             margin-top: 10vh;
@@ -80,7 +80,11 @@
 
         .lg-heading {
             margin-top: 1rem;
-            font-size: 3rem;
+            font-size: 2.6rem;
+        }
+
+        .sm-heading {
+            font-size: 1.5rem;
         }
     }
 
