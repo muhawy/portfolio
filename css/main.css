@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #292929;
+    background: #eeeeee;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -39,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(234, 234, 234, 0.9);
+    background: rgba(24, 28, 34, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(247, 247, 247, 0.9);
+    background: rgba(34, 40, 49, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -56,14 +56,14 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #4c7afc; }
+      border: solid 3px #00adb5; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #4c7afc; }
+      color: #00adb5; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -71,11 +71,11 @@
     text-transform: uppercase;
     padding: 1 rem 0;
     font-weight: 300;
-    color: #292929;
+    color: #eeeeee;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #4c7afc; }
+      color: #00adb5; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -93,11 +93,11 @@
   box-sizing: border-box; }
 
 body {
-  background: #f7f7f7;
-  color: #292929;
+  background: #222831;
+  color: #eeeeee;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
@@ -111,7 +111,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(247, 247, 247, 0.8); }
+      background: rgba(34, 40, 49, 0.9); }
 
 h1,
 h2,
@@ -121,15 +121,52 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 4rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem; }
 
+.text h1 {
+  color: #eeeeee;
+  cursor: context-menu; }
+  .text h1 span {
+    display: inline-block;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1; }
+    .text h1 span:hover {
+      transition: all .5s;
+      animation-name: rubberBand; }
+    .text h1 span.name {
+      color: #00adb5; }
+    .text h1 span.m-left {
+      margin-left: -5px; }
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
+.text p {
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: 1.5rem; }
+
 a {
-  color: #292929;
+  color: #eeeeee;
   text-decoration: none; }
 
 header {
@@ -138,7 +175,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #4c7afc; }
+  color: #00adb5; }
 
 main {
   padding: 4rem;
@@ -148,7 +185,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #4c7afc;
+        color: #00adb5;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -164,23 +201,24 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #4c7afc 3px solid; }
+    border: #00adb5 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
-    grid-area: job1;
-    border-radius: 5px; }
+    grid-area: job1; }
   .about-info .job-2 {
-    grid-area: job2;
-    border-radius: 5px; }
+    grid-area: job2; }
   .about-info .job-3 {
-    grid-area: job3;
-    border-radius: 5px; }
+    grid-area: job3; }
   .about-info .job {
-    background: white;
+    background: #2c3440;
     padding: 0.5rem;
-    border-bottom: #4c7afc 5px solid; }
+    border-bottom: #00adb5 5px solid;
+    border-radius: 7px;
+    text-align: center; }
+  .about-info h5 {
+    margin: 0; }
 
 .projects {
   display: grid;
@@ -192,7 +230,7 @@ main {
     border-radius: 5px; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #4c7afc;
+      border-color: #00adb5;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -210,10 +248,10 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #4c7afc;
-      color: #292929; }
+      background: #00adb5;
+      color: #eeeeee; }
       .boxes div:hover span {
-        color: #292929; }
+        color: #eeeeee; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -221,24 +259,24 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #4c7afc;
-    color: #292929; }
+    background: #00adb5;
+    color: #eeeeee; }
 
 .btn-dark {
-  background: #787878;
+  background: black;
   color: #fff;
   border-radius: 5px; }
 
 .btn-light {
-  background: white;
+  background: #99a6b9;
   color: #333;
   border-radius: 5px; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #dedede;
-  color: #292929;
+  background: #0d0f13;
+  color: #eeeeee;
   height: 60px;
   align-items: center; }
 
@@ -257,7 +295,7 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
-      font-size: 4rem; }
+      font-size: 3.5rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -285,11 +323,13 @@ main {
 
 @media screen and (max-width: 500px) {
   main {
-    padding: 2rem; }
+    padding: 1rem; }
     main #home h1 {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 3rem; }
+      font-size: 2.6rem; }
+    main .sm-heading {
+      font-size: 1.5rem; }
   .projects {
     grid-template-columns: 1fr; } }
